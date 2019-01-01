@@ -1,6 +1,6 @@
 class particle {
   constructor() {
-    this.sch = [-0.5,-1,1,0.5];
+    this.sch = [-1.25,1.5,-1.5,0,-1,1,1.25];
     this.y = random(0,height);
     this.x = random(0,width);
     this.xs = random(this.sch);
@@ -34,5 +34,4 @@ class particle {
       line(this.x,this.y,other.x,other.y);
     }
   }
-
 }
