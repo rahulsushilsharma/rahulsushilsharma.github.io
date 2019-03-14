@@ -7,7 +7,7 @@ function setup() {
 function draw() {
   background(0);
   for(let i = 0;i <arr.length;i++){
-    stroke(arr[i],159,0);
+    stroke(arr[i],159,arr[i]);
    line(i+3,height,i+3,height-arr[i]);
   }
    bubble_sort(0);
