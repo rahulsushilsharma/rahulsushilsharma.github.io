@@ -5,6 +5,7 @@ function setup() {
     arr[i] = random(height);
 }
 function draw() {
+  frameRate(20);
   background(0);
   for(let i = 0;i <arr.length;i++){
     stroke(arr[i],159,arr[i]);
