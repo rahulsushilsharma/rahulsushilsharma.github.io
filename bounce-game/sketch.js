@@ -6,7 +6,7 @@ function preload() {
   tubeimg = loadImage("tube.png");
 }
 function setup() {
-  createCanvas(600,400);
+  createCanvas(900,600);
   createP("Use space to bounce...");
   p.push(new pipe());
   b = new ball();
