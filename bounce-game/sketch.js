@@ -45,7 +45,17 @@ function keyPressed(){
   b.bounce();
   }
 }
-
+function mouseClicked(){
+     let privscore = score;
+   if(privscore>heighscore) {
+    heighscore = privscore;
+   }
+   if ((b.y+(b.d)/2 ) > height-b.up) {
+    count++
+  b.bounce();
+  }
+}
+}
 
 function displayScore() {
   score = frameCount/10;
