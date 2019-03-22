@@ -1,7 +1,16 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+  height: 100%;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  background-size: cover;
 }
-canvas {
-  display: block;
+
+.bg { 
+  /* The image used */
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
