@@ -1,7 +1,7 @@
 let p = [];
 let  d,str;
 function setup() {
-	createCanvas(900,600);
+	createCanvas(windowWidth,windowHeight);
 	for (var i = 0; i < 100; i++) {
 		p[i] = new particle();
 	}
