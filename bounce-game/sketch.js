@@ -6,12 +6,12 @@ function preload() {
   tubeimg = loadImage("tube.png");
 }
 function setup() {
-  createCanvas(900,600);
+  createCanvas(windowWidth,windowHeight);
   createP("Use space to bounce...");
   p.push(new pipe());
   b = new ball();
 }
- 
+
 function draw() {
   if (frameCount % 100 == 0) {
     p.push(new pipe());
@@ -35,25 +35,24 @@ function draw() {
 function keyPressed(){
   if (key == " "&& fr == 0) {
     frameRate(60);
-   let privscore = score;
-   if(privscore>heighscore) {
-    heighscore = privscore;
-   }
+    let privscore = score;
+    if(privscore>heighscore) {
+      heighscore = privscore;
+    }
   }
   if ((key == " ")&&(b.y+(b.d)/2 ) > height-b.up) {
     count++
-  b.bounce();
+    b.bounce();
   }
 }
 function mouseClicked(){
-     let privscore = score;
-   if(privscore>heighscore) {
-    heighscore = privscore;
-   }
-   if ((b.y+(b.d)/2 ) > height-b.up) {
-    count++
+ let privscore = score;
+ if(privscore>heighscore) {
+  heighscore = privscore;
+}
+if ((b.y+(b.d)/2 ) > height-b.up) {
+  count++
   b.bounce();
-  }
 }
 }
 

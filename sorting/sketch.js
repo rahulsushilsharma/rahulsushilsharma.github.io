@@ -1,6 +1,6 @@
 let arr = [];
 function setup() {
-  createCanvas(600,400);
+  createCanvas(windowWidth,windowHeight);
   for(let i = 0; i<=width;i++)
     arr[i] = random(height);
 }
