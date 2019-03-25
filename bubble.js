@@ -9,7 +9,6 @@ class Bubble {
     stroke(255,50);
     strokeWeight(2)
     ellipse(this.x,this.y,this.r*2);
-    print(this.r)
   }
   collide(other){
     let d = dist(this.x,this.y,other.x,other.y);
