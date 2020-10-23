@@ -1,0 +1,13 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer div{
+    text-align: center;
+    
+}
+.footer div p{
+    margin: 0;
+}

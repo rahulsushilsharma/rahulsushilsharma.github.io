@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.investorial.beta.twa",
+                 "sha256_cert_fingerprints": ["4B:8D:A5:79:B7:94:6C:EA:C8:3F:90:B0:72:FB:59:21:B5:E9:F4:76:E5:DF:EA:3F:52:F4:DB:91:19:62:49:D7"] }
+  }]

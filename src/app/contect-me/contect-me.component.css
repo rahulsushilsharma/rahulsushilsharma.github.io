@@ -1,0 +1,12 @@
+.poster{
+    text-align: center;
+    
+}
+.poster a{
+    display: block;
+    margin-top: 1em;
+}
+.poster a img{
+    width: 100px;
+    height: 100px;
+}
