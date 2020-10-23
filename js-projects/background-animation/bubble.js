@@ -3,6 +3,8 @@ class Bubble {
     this.x = x;
     this.y = y;
     this.r = r;
+    this.speedx = random(-2,2)
+    this.speedy = random(-2,2)
   }
   show(){
     fill(0);
@@ -24,12 +26,19 @@ class Bubble {
     }
   }
   move() {
-    this.x = this.x + random(-1,1);
-    this.y = this.y + random(-1,1);
+    this.x = this.x + this.speedx;
+    this.y = this.y + this.speedy;
   }
   check() {
-    if(this.r>200||this.r<=0) {
+    if(this.r>150||this.r<=0) {
       this.r = random(10,50);
+    }
+  }
+  ofscreen() {
+    if(this.x<0||this.x>width||this.y<0||this.y>height) {
+      this.speedx = -this.speedx
+      this.speedy = -this.speedy
+
     }
   }
 }
